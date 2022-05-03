@@ -212,7 +212,7 @@ client.on("messageCreate", async (message) => {
         
                         const resource = createAudioResource('/Users/atiksh/Coding2021/DiscordBot/test_song_for_ytdl.mp4', { inlineVolume: true });
                         
-                        resource.volume.setVolume(2 );
+                        resource.volume.setVolume(0.5);
         
                         player.play(resource)
                         message.channel.send("`Now Playing: " + songName + "`")
