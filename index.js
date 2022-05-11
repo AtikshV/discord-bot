@@ -11,6 +11,9 @@ const ytsr = require('ytsr');
 var songName
 var yts = require("yt-search")
 var urlQ
+var pathToFfmpeg = require('ffmpeg-static');
+console.log(pathToFfmpeg);
+
 
 
 
@@ -212,7 +215,7 @@ client.on("messageCreate", async (message) => {
         
                         const resource = createAudioResource('/Users/atiksh/Coding2021/DiscordBot/test_song_for_ytdl.mp4', { inlineVolume: true });
                         
-                        resource.volume.setVolume(0.5);
+                        resource.volume.setVolume(1);
         
                         player.play(resource)
                         message.channel.send("`Now Playing: " + songName + "`")
