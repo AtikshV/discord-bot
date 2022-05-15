@@ -146,9 +146,9 @@ client.on("messageCreate", async (message) => {
     {
         message.channel.send("Hey")
     }
-    if(trigger == "permcrash" && message.author.id == 768483086689370182)
+    if(trigger == "shutdown" && message.author.id == 768483086689370182)
     {
-        message.channel.send("turning off")
+        message.channel.send("bye")
             .then(process.exit(1))
     }
     // if(trigger.includes("the"))
